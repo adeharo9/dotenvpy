@@ -1,5 +1,7 @@
 # dotenvpy, a python-dotenv wrapper
 
+![version 0.1.0](https://img.shields.io/badge/version-0.1.0-blue "version 0.1.0")
+
 This module is a simple wrapper around the well-known [`python-dotenv`](https://pypi.org/project/python-dotenv/) module for Python. It provides attribute-like read access to environment variables.
 
 ## Table of contents
@@ -8,9 +10,10 @@ This module is a simple wrapper around the well-known [`python-dotenv`](https://
 2. [Usage](#usage)
    1. [Typed environment variables](#typed-environment-variables)
 3. [Features](#features)
-4. [Known non-features](#known-non-features)
 
 ## Installation
+
+**_INSTALLATION THROUGH `pip` COMING SOON!_**
 
 - `pip install dotenvpy`
 
@@ -60,7 +63,7 @@ env.load_dotenv()
 # Without dotenvpy, this code would be quite larger
 #
 # At least a whole section with explicit type conversions and variable
-# assignation would have been necessary
+# assignations would have been necessary
 
 if env.NON_VAR is None and env.BOL_VAR:
     a = 9 % env.INT_VAR
@@ -89,9 +92,3 @@ Since `ast` is the module Python internally uses for its own interpretation, it 
 - **All** the capabilities of `python-dotenv`.
 - Attribute-like read access to environment variables.
 - Automatic conversion of the environment variables to their most suitable type.
-
-## Known non-features
-
-These are not bugs, they are not (yet) features 🙃
-
-- No completion hints on IDEs.
