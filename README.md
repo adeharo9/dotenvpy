@@ -31,8 +31,8 @@ print(env.HOME)
 print(env.PATH)
 
 # This is equivalent to:
-# print(os.getenv("HOME"))
-# print(os.getenv("PATH"))
+# print(os.getenv('HOME'))
+# print(os.getenv('PATH'))
 ```
 
 ### Typed environment variables
@@ -48,9 +48,9 @@ INT_VAR=4
 FLT_VAR=5.18
 CPX_VAR=(2+3j)
 LST_VAR=[1,2]
-TPL_VAR=("1",2)
-DCT_VAR={"a":1,"b":2}
-STR_VAR="Just a string"
+TPL_VAR=('1',2)
+DCT_VAR={'a':1,'b':2}
+STR_VAR='Just a string'
 ```
 
 The following code would be valid with `dotenvpy`:
@@ -73,7 +73,7 @@ if env.CPX_VAR.real + 1 == env.CPX_VAR.imag:
     print(env.LST_VAR[1])
     print(env.TPL_VAR[0])
 
-if env.DCT_VAR["a"] + 1 == env.DCT_VAR["b"]:
+if env.DCT_VAR['a'] + 1 == env.DCT_VAR['a']:
     print(env.STR_VAR)
 ```
 
